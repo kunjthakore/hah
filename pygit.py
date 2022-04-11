@@ -12,8 +12,11 @@ def git_do(cmd):
 # time.sleep(1)
 
 # print("Git Init is Running")
-# git_do(['commit' ,'-m', '"first commit"'])
+
 # git_do([ 'remote', 'add', 'origin' ,'https://github.com/kunjthakore/repo2.git'])
-# git_do(['push', '-u', 'origin', 'main'])
 git_do(['add','-A'])
+git_do(['commit' ,'-m', '"commit"'])
+git_do(['push', '-u', 'origin', 'main'])
+
+
 
