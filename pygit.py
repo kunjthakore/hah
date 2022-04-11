@@ -22,7 +22,7 @@ dict="/Users/kunjthakor/Documents/Python_Program/New_Folder"
 
 for name in  dict:
     if os.path.isdir(os.path.join(dict,name)):
-        git_do(['remote', 'set-url', 'origin' ,'https://github.com/kunjthakore/{name}.git'])
+        git_do([f'remote', 'set-url', 'origin' ,'https://github.com/kunjthakore/test3.git'])
         git_do(['add','-A'])
         git_do(['commit' ,'-m', '"commit"'])
         git_do(['push', '-u', 'origin', 'main'])
