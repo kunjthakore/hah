@@ -11,7 +11,7 @@ def git_do(cmd):
 # print("Git Init is Running")
 # git_do(['init'])
 # time.sleep(1)
-dicto="//Users//kunjthakor//Documents//Python_Program//New_Folder"
+dicto="/Users/kunjthakor/Documents/Python_Program/New_Folder"
 # print("Git Init is Running")
 
 # git_do([ 'remote', 'add', 'origin' ,'https://github.com/kunjthakore/repo2.git'])
@@ -25,8 +25,9 @@ dictlist=os.listdir(dicto)
 
 for name in  dictlist:
     if os.path.isdir(os.path.join(dicto,name)):
-        git_do(['init',f'{dicto}'])
-        git_do(['remote', 'set-url', 'origin' ,'https://github.com/kunjthakore/test3.git'])
+        # git_do(['init',f'{dicto}'])
+        # git_do(['remote', 'add', 'origin' ,'https://github.com/kunjthakore/test3.git'])
+        git_do(['status'])
         git_do(['add','--all'])
-        # git_do(['commit' ,'-m', '"commit3"'])
-        git_do(['push', '-u', 'origin', 'main'])
+        git_do(['commit','-m','"newpush"'])
+        git_do(['push', 'origin', 'main'])
