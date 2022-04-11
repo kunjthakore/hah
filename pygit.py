@@ -25,8 +25,8 @@ dictlist=os.listdir(dicto)
 
 for name in  dictlist:
     if os.path.isdir(os.path.join(dicto,name)):
-        # git_do(['init',f'{dicto}'])
-        # git_do(['remote', 'add', 'origin' ,'https://github.com/kunjthakore/test3.git'])
+        git_do(['init',f'{dicto}'])
+        git_do(['remote', 'set-url', 'origin' ,'https://github.com/kunjthakore/test4.git'])
         git_do(['status'])
         git_do(['add','--all'])
         git_do(['commit','-m','"newpush"'])
